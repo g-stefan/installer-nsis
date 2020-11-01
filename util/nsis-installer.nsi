@@ -13,7 +13,7 @@
 Name "Nullsoft Install System"
 
 ; Version
-!define NSISVersion "3.06.1"
+!define NSISVersion "$%PRODUCT_VERSION%"
 
 ; The file to write                     
 OutFile "installer\nsis-${NSISVersion}-installer.exe"

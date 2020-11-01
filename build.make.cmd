@@ -4,6 +4,9 @@ rem http://unlicense.org/
 rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
 echo -^> make nsis
+
+call build.config.cmd
+
 @echo on
 
 if exist build\ rmdir /Q /S build
@@ -11,7 +14,7 @@ if exist release\ rmdir /Q /S release
 
 mkdir build
 
-7z x "vendor/nsis-3.06.1.zip" -aoa -obuild
+7z x "vendor/nsis-%PRODUCT_VERSION%.zip" -aoa -obuild
 7z x "vendor/EnVar_plugin.zip" -aoa -obuild\EnVar
 7z x "vendor/NsProcess.zip" -aoa -obuild\NsProcess
 
@@ -27,6 +30,6 @@ move build\NsProcess\Readme.txt %NSIS_BUILD%\Contrib\NsProcess\Readme.txt
 
 xcopy /E build\EnVar\* %NSIS_BUILD%\
 
-move /Y "build\nsis-3.06.1" "release"
+move /Y "build\nsis-%PRODUCT_VERSION%" "release"
 
 if exist build\ rmdir /Q /S build
