@@ -3,9 +3,9 @@ rem Public domain
 rem http://unlicense.org/
 rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
-echo -^> make nsis
-
 call build.config.cmd
+
+echo -^> make %PRODUCT_NAME%
 
 @echo on
 
