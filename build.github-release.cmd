@@ -17,7 +17,7 @@ if not exist installer\%PRODUCT_BASE%-%VERSION%-installer.exe echo Error - no re
 
 echo -^> github release %PROJECT% v%VERSION%
 
-git pull --tags origin master
+git pull --tags origin main
 git fetch origin --tags --force
 git fetch --prune origin "+refs/tags/*:refs/tags/*"
 git rev-parse --quiet "v%VERSION%" 1>NUL 2>NUL
