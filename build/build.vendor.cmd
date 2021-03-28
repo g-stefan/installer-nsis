@@ -3,7 +3,7 @@ rem Public domain
 rem http://unlicense.org/
 rem Created by Grigore Stefan <g_stefan@yahoo.com>
 
-call build.config.cmd
+call build\build.config.cmd
 
 echo -^> vendor %PRODUCT_NAME%
 
