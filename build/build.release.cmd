@@ -11,3 +11,4 @@ call build\build.clean.cmd
 call build\build.vendor.cmd
 call build\build.make.cmd
 call build\build.installer.cmd
+call build\build.clean.cmd
