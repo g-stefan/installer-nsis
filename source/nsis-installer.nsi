@@ -16,7 +16,7 @@ Name "Nullsoft Install System"
 !define NSISVersion "$%PRODUCT_VERSION%"
 
 ; The file to write                     
-OutFile "installer\nsis-${NSISVersion}-installer.exe"
+OutFile "release\nsis-${NSISVersion}-installer.exe"
 
 Unicode True
 CRCCheck on
