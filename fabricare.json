@@ -1,11 +1,15 @@
 {
-	"project": {
+	"solution": {
 		"name" : "installer-nsis",
 		"type" : "xyo-cpp",
-		"SPDX-License-Identifier": "MIT",
-		"version" : "3.08",
-		"hasRelease" : true,
-		"noVersion" : true,
-		"githubRelease" : true
+		"projects": [
+			{
+				"name" : "installer-nsis",
+				"SPDX-License-Identifier": "MIT",
+				"version" : "3.08",
+				"noVersion" : true
+			}
+		],
+		"hasGithub" : true
 	}
 }
