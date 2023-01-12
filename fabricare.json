@@ -10,6 +10,11 @@
 				"noVersion" : true
 			}
 		],
-		"hasGithub" : true
+		"hasGithub" : true,
+		"sourceLinks" : {
+			"nsis-3.08.zip" : "https://sourceforge.net/projects/nsis/files/",
+			"EnVar_plugin.zip" : "https://nsis.sourceforge.io/EnVar_plug-in",
+			"NsProcess.zip" : "https://nsis.sourceforge.io/NsProcess_plugin"
+		}
 	}
 }
