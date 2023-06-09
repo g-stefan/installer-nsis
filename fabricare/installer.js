@@ -7,6 +7,8 @@ messageAction("installer");
 
 Shell.mkdirRecursivelyIfNotExists("release");
 
+Shell.setenv("PATH", Shell.getcwd() + "\\output\\bin;" + Shell.getenv("PATH"));
+
 Shell.setenv("PRODUCT_NAME", "installer-nsis");
 Shell.setenv("PRODUCT_VERSION", Project.version);
 Shell.setenv("PRODUCT_BASE", "nsis");
