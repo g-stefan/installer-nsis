@@ -16,11 +16,11 @@ if (Shell.fileExists("temp/build.done.flag")) {
 	return;
 };
 
-Shell.system("7z x vendor/nsis-3.08.zip -aoa -otemp");
+Shell.system("7z x vendor/nsis-3.10.zip -aoa -otemp");
 Shell.system("7z x vendor/EnVar_plugin.zip -aoa -otemp/EnVar");
 Shell.system("7z x vendor/NsProcess.7z -aoa -otemp/NsProcess");
 
-Shell.copyDirRecursively("temp/nsis-3.08", "output");
+Shell.copyDirRecursively("temp/nsis-3.10", "output");
 Shell.rename("temp/NsProcess/Example/nsProcessTest.nsi", "output/Examples/nsProcessTest.nsi");
 Shell.rename("temp/NsProcess/Include/nsProcess.nsh", "output/Include/nsProcess.nsh");
 Shell.rename("temp/NsProcess/Plugin/nsProcess.dll", "output/Plugins/x86-ansi/nsProcess.dll");
