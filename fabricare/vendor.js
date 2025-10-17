@@ -7,9 +7,9 @@ messageAction("vendor");
 
 Shell.mkdirRecursivelyIfNotExists("vendor");
 
-if (!Shell.fileExists("vendor/nsis-3.10.zip")) {                       
-	var webLink = "https://sourceforge.net/projects/nsis/files/NSIS%203/3.10/nsis-3.10.zip/download";
-	var cmd = "curl --insecure --location " + webLink + " --output vendor/nsis-3.10.zip";
+if (!Shell.fileExists("vendor/nsis-3.11.zip")) {
+	var webLink = "https://sourceforge.net/projects/nsis/files/NSIS%203/3.11/nsis-3.11.zip/download";
+	var cmd = "curl --insecure --location " + webLink + " --output vendor/nsis-3.11.zip";
 	Console.writeLn(cmd);
 	exitIf(Shell.system(cmd));
 };

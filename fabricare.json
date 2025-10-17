@@ -6,12 +6,12 @@
 			{
 				"name" : "installer-nsis",
 				"SPDX-License-Identifier": "MIT",
-				"version" : "3.10",
+				"version" : "3.11",
 				"noVersion" : true
 			}
 		],
 		"sourceLinks" : {
-			"nsis-3.08.zip" : "https://sourceforge.net/projects/nsis/files/",
+			"nsis-3.11.zip" : "https://sourceforge.net/projects/nsis/files/",
 			"EnVar_plugin.zip" : "https://nsis.sourceforge.io/EnVar_plug-in",
 			"NsProcess.zip" : "https://nsis.sourceforge.io/NsProcess_plugin"
 		}
